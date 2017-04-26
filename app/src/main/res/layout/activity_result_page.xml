@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:text="Round Result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:id="@+id/resultPageTitle"
+        android:textSize="30dp"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/resultImg1"
+        android:layout_weight="0.74"
+        app:srcCompat="@android:color/holo_orange_light"
+        android:layout_below="@+id/roundWinnerText"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="33dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:text="Round Winner: "
+        android:id="@+id/roundWinnerText"
+        android:layout_marginTop="24dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@+id/finishResultButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="Next Round"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/finishResultButton"
+        android:layout_weight="0.74"
+        android:layout_below="@+id/resultPageTitle"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="Username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/winnerUsername"
+        android:textSize="30dp"
+        android:layout_above="@+id/resultImg1"
+        android:layout_toRightOf="@+id/roundWinnerText"
+        android:layout_toEndOf="@+id/roundWinnerText" />
+
+    <Button
+        android:text="Score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:id="@+id/scoreResultButton"
+        android:layout_below="@+id/resultImg1"
+        android:layout_alignRight="@+id/resultImg1"
+        android:layout_alignEnd="@+id/resultImg1" />
+
+    <Button
+        android:text="exit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/scoreResultButton"
+        android:layout_alignLeft="@+id/resultImg1"
+        android:layout_alignStart="@+id/resultImg1"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"
+        android:id="@+id/exitGameButton2" />
+
+    <Button
+        android:text="upload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/uploadPicButton"
+        android:layout_alignBaseline="@+id/scoreResultButton"
+        android:layout_alignBottom="@+id/scoreResultButton"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:id="@+id/correctImg"
+        android:layout_width="250dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="250dp"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/scoreResultButton"
+        android:layout_alignTop="@+id/resultImg1"></ImageView>
+
+
+</RelativeLayout>

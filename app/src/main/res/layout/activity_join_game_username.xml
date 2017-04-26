@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_join_game_username"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.guessit.guessit.JoinGameUsername">
+
+    <Button
+        android:id="@+id/checkusername"
+        android:text="Check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="300dp"
+        android:onClick="checkUserName"
+        android:layout_above="@+id/submitcode"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/submitcode"
+        android:width="300dp"
+        android:text="Submit"
+        android:onClick="submitCode"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/secretcode"
+        android:layout_alignStart="@+id/secretcode"
+        android:layout_marginBottom="116dp" />
+
+    <TextView
+        android:text="Ask the game creator for the secret code."
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkusername"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="71dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Game Code:"
+        android:id="@+id/textView15"
+        android:textSize="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="38dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="300dp"
+        android:id="@+id/secretcode"
+        android:layout_below="@+id/textView15"
+        android:layout_alignLeft="@+id/username"
+        android:layout_alignStart="@+id/username"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Username:"
+        android:id="@+id/textView3"
+        android:textSize="30dp"
+        android:layout_marginTop="80dp"
+        android:layout_below="@+id/textView15"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/username"
+        android:width="300dp"
+        android:layout_below="@+id/textView3"
+        android:layout_alignLeft="@+id/checkusername"
+        android:layout_alignStart="@+id/checkusername"
+        android:layout_marginTop="55dp" />
+
+</RelativeLayout>

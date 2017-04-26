@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_hint"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.guessit.guessit.HintActivity">
+
+    <TextView
+        android:text="Game Id: "
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView16"
+        android:textSize="36sp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="48dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textAlignment="center" />
+
+    <ImageView
+        android:layout_height="70dp"
+        android:id="@+id/imageView14"
+        android:layout_width="70dp"
+        android:layout_below="@+id/imageView12"
+        android:layout_alignLeft="@+id/imageView12"
+        android:layout_alignStart="@+id/imageView12" />
+
+    <ImageView
+        android:layout_height="70dp"
+        android:id="@+id/imageView15"
+        android:layout_width="70dp"
+        android:layout_below="@+id/imageView13"
+        android:layout_alignLeft="@+id/imageView13"
+        android:layout_alignStart="@+id/imageView13" />
+
+    <ImageView
+        android:layout_height="70dp"
+        android:id="@+id/imageView17"
+        android:layout_width="70dp"
+        android:layout_below="@+id/imageView15"
+        android:layout_alignLeft="@+id/imageView15"
+        android:layout_alignStart="@+id/imageView15" />
+
+    <ImageView
+        android:layout_height="70dp"
+        android:id="@+id/imageView16"
+        android:layout_width="70dp"
+        android:layout_below="@+id/imageView14"
+        android:layout_alignLeft="@+id/imageView14"
+        android:layout_alignStart="@+id/imageView14" />
+
+    <ImageView
+        android:layout_height="70dp"
+        android:id="@+id/imageView18"
+        android:layout_width="70dp"
+        android:layout_below="@+id/imageView16"
+        android:layout_alignLeft="@+id/imageView16"
+        android:layout_alignStart="@+id/imageView16" />
+
+    <ImageView
+        android:layout_height="70dp"
+        android:id="@+id/imageView19"
+        android:layout_width="70dp"
+        android:layout_below="@+id/imageView17"
+        android:layout_alignLeft="@+id/imageView17"
+        android:layout_alignStart="@+id/imageView17" />
+
+    <ImageView
+        android:layout_height="70dp"
+        android:layout_marginTop="62dp"
+        android:id="@+id/imageView12"
+        android:layout_width="70dp"
+        android:layout_marginRight="59dp"
+        android:layout_marginEnd="59dp"
+        android:layout_below="@+id/textView16"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:layout_height="70dp"
+        android:id="@+id/imageView13"
+        android:layout_width="70dp"
+        android:layout_marginRight="70dp"
+        android:layout_marginEnd="70dp"
+        android:layout_alignTop="@+id/imageView12"
+        android:layout_toLeftOf="@+id/imageView14"
+        android:layout_toStartOf="@+id/imageView14" />
+
+    <Button
+        android:text="Ready"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        android:id="@+id/button3"
+        android:layout_width="800dp"
+        android:layout_below="@+id/imageView18"
+        android:layout_centerHorizontal="true"
+        android:onClick="ready" />
+
+</RelativeLayout>

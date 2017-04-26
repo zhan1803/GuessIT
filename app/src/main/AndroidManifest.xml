@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.guessit.guessit">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission-sdk-23 android:name="android.permission.CAMERA" />
+    <uses-permission-sdk-23 android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MonsterActivity" />
+        <activity android:name=".HumanActivity" />
+        <activity
+            android:name=".ScoreTable"
+            android:theme="@style/AppTheme.CustomPopUpWindowTheme" />
+        <activity
+            android:name=".HintPage"
+            android:theme="@style/AppTheme.CustomPopUpWindowTheme" />
+        <activity android:name=".JoinGameUsername" />
+        <activity android:name=".StartGameUsername" />
+        <activity android:name=".ChooseFaction" />
+        <activity android:name=".GamePage" />
+        <activity android:name=".HintActivity" />
+        <activity android:name=".ImagePage" />
+        <activity android:name=".ResultPage" />
+        <activity android:name=".WinnerPage" />
+        <activity android:name=".ExitGame" />
+        <activity android:name=".PicturePage"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/activity_start_game_username"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:paddingBottom="@dimen/activity_vertical_margin"
+android:paddingLeft="@dimen/activity_horizontal_margin"
+android:paddingRight="@dimen/activity_horizontal_margin"
+android:paddingTop="@dimen/activity_vertical_margin"
+tools:context="com.example.guessit.guessit.StartGameUsername">
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/textView9"
+    android:layout_below="@+id/textView7"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="32dp"
+    android:textSize="50dp"/>
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="The secret code is:"
+    android:id="@+id/textView7"
+    android:layout_marginTop="14dp"
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true"
+    android:textSize="30dp"/>
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Tell your friends to enter the code to join the game."
+    android:id="@+id/textView8"
+    android:layout_below="@+id/textView9"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="25dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose a faction"
+        android:id="@+id/gotofaction"
+        android:width="300dp"
+        android:onClick="gotoFaction"
+        android:layout_marginBottom="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/textView8"
+        android:layout_alignEnd="@+id/textView8" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Check username"
+        android:id="@+id/checkusername2"
+        android:width="300dp"
+        android:onClick="checkusername"
+        android:layout_above="@+id/gotofaction"
+        android:layout_alignLeft="@+id/gotofaction"
+        android:layout_alignStart="@+id/gotofaction" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/usernamefield"
+        android:width="300dp"
+        android:layout_below="@+id/textView6"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Username"
+        android:id="@+id/textView6"
+        android:layout_marginTop="36dp"
+        android:textSize="30dp"
+        android:layout_below="@+id/textView8"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

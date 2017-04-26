@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:text="Are you sure to exit?"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="55dp"
+        android:id="@+id/exitGameTitle"
+        android:textSize="35dp"/>
+
+    <Button
+        android:text="yes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/exitGameTitle"
+        android:layout_alignLeft="@+id/exitGameTitle"
+        android:layout_alignStart="@+id/exitGameTitle"
+        android:layout_marginLeft="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="106dp"
+        android:id="@+id/confirmExit" />
+
+    <Button
+        android:text="back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="39dp"
+        android:layout_marginEnd="39dp"
+        android:id="@+id/backToGame"
+        android:layout_alignBaseline="@+id/confirmExit"
+        android:layout_alignBottom="@+id/confirmExit"
+        android:layout_alignRight="@+id/exitGameTitle"
+        android:layout_alignEnd="@+id/exitGameTitle"
+        android:onClick="informOtherPlayers"/>
+</RelativeLayout>

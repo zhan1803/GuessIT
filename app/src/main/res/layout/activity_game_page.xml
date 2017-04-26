@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_game_page"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.guessit.guessit.GamePage">
+
+    <Button
+        android:id="@+id/viewScoreButton"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:text="Score"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/viewHintButton"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:text="Hint"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/viewScoreButton"
+        android:layout_toStartOf="@+id/viewScoreButton" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageview"
+        android:layout_centerInParent="true"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/avatarImg"
+        android:layout_alignLeft="@+id/viewHintButton"
+        android:layout_alignStart="@+id/viewHintButton" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="300dp"
+        android:text="Confirm Image"
+        android:id="@+id/confirmimg"
+        android:onClick="confirmImage"
+        android:layout_above="@+id/takeimg"
+        android:layout_alignLeft="@+id/takeimg"
+        android:layout_alignStart="@+id/takeimg" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="300dp"
+        android:text="Take Image"
+        android:layout_marginBottom="22dp"
+        android:id="@+id/takeimg"
+        android:onClick="takeImage"
+        android:layout_above="@+id/viewScoreButton"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/countDownTimer"
+        android:layout_alignBottom="@+id/progressBar"
+        android:layout_alignRight="@+id/showuser"
+        android:layout_alignEnd="@+id/showuser" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/avatarImg"
+        android:layout_alignBottom="@+id/progressBar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:max="10"
+        android:minHeight="50dp"
+        android:minWidth="200dp"
+        android:progress="0"
+        android:id="@+id/progressBar"
+        android:visibility="visible"
+        android:layout_below="@+id/showuser"
+        android:layout_alignLeft="@+id/showuser"
+        android:layout_alignStart="@+id/showuser" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hieeeeeee"
+        android:textSize="20dp"
+        android:id="@+id/showuser"
+        android:layout_marginTop="28dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/confirmimg"
+        android:layout_alignEnd="@+id/confirmimg" />
+
+    <TextView
+        android:text="Hello"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView10"
+        android:layout_alignBaseline="@+id/showuser"
+        android:layout_alignBottom="@+id/showuser"
+        android:layout_toLeftOf="@+id/showuser"
+        android:layout_toStartOf="@+id/showuser"
+        android:layout_marginRight="22dp"
+        android:layout_marginEnd="22dp" />
+
+    <Button
+        android:text="Result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/testResult"
+        android:layout_below="@+id/takeimg"
+        android:layout_toLeftOf="@+id/viewHintButton"
+        android:layout_toStartOf="@+id/viewHintButton" />
+
+    <Button
+        android:text="exit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/exitGameButton"
+        android:layout_below="@+id/takeimg"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/testResult"/>
+
+
+</RelativeLayout>
